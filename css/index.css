@@ -61,6 +61,16 @@ body{
 .video__encabezado, .video__descripcion{
     color: #fff;
 }
+.footer{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1f29;
+}
+.footer__descripcion{
+    color: #fff;
+}
 @media screen and (min-width: 480px){
     .contenedor__header{
         flex-direction: row;
