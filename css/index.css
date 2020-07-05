@@ -49,7 +49,18 @@ body{
     font-size: 1.3rem;
     font-weight: 400;
 }
-
+.contenido__principal{
+    width: 80%;
+    margin: 20px auto;
+}
+.video__seccion{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.video__encabezado, .video__descripcion{
+    color: #fff;
+}
 @media screen and (min-width: 480px){
     .contenedor__header{
         flex-direction: row;
@@ -62,4 +73,21 @@ body{
     .services__box{
         width: calc(100% / 3);
     }
+}
+
+@media screen and (min-width: 768px){
+
+    .video__seccion{        
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .video__encabezado{
+        font-size: 1.9rem;
+    }
+    .video__left, .video__right{
+        padding: 10px;
+        width: calc(100% / 2);
+    }
+
 }
