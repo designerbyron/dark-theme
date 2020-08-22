@@ -1,6 +1,8 @@
+
 body{
     font-family: 'Oxygen', sans-serif;
     background-color: #282c34;
+    box-sizing: border-box;
 }
 .contenedor__header{
     min-height: 80px;    
@@ -11,6 +13,10 @@ body{
    
 
 }
+.img_logo{
+    width: 150px;
+}
+
 .contenedor__logos{
     width: 100%;
     text-align: center;
@@ -18,7 +24,11 @@ body{
     height: 100%;     
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
+}
+.repo{
+    display: none;
 }
 .logo-right-enlace{
     text-decoration: none;
@@ -27,20 +37,37 @@ body{
 .logo-right-enlace:hover{
     color: rgb(196, 193, 193);
 }
+.whatsapp-right-enlace:hover{
+    color: rgb(196, 193, 193);
+}
+        .whatsapp-right-enlace{
+            color: white;
+        }
 .services__container{
     background-color: #1e1f29;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+
 }
-.services__box{
-    width: 100%;
+
+.services__box{    
     padding: 15px;
     color:rgb(221, 219, 219);
     text-align: center;
 }
 .services__box:first-child{
     background-color: #282c34;
+    width: 100%;
+    box-sizing: border-box;
+}
+.services__box:nth-child(2){
+    width: 50%;
+    box-sizing: border-box;
+    
+}
+.services__box:nth-child(3){
+    width: 50%;
+    box-sizing: border-box;
 }
 .services__icon img{
     width: 70px;
@@ -72,20 +99,25 @@ body{
     color: #fff;
 }
 @media screen and (min-width: 480px){
+    .img_logo{
+        width: 200px;
+    }
     .contenedor__header{
         flex-direction: row;
         justify-content: space-between;
     
     }
-    .services__container{
-        flex-wrap: nowrap;
-    }
-    .services__box{
-        width: calc(100% / 3);
-    }
+
+
 }
 
 @media screen and (min-width: 768px){
+    .img_logo{
+        width: 350px;
+    }
+    .repo{
+        display: inline-flex;
+    }
 
     .video__seccion{        
         justify-content: space-between;
@@ -98,6 +130,11 @@ body{
     .video__left, .video__right{
         padding: 10px;
         width: calc(100% / 2);
+    }
+    .services__container{
+
+        flex-wrap: nowrap;
+    
     }
 
 }
